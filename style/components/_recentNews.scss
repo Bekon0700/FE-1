@@ -1,0 +1,131 @@
+.recent-news-section {
+    height: 985.76px;
+    gap: 80px;
+    background-color: #F4FBFF;
+    @include respondScreen('large-mobile') {
+        height: auto;
+        margin: 50px auto;
+        gap: 25px;
+    }    
+}
+
+.recent-news-top {
+    @include respondScreen('large-mobile') {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .info {
+        gap: 16px;
+        .recent-news-title {
+            font-size: 48px;
+            font-weight: 700;
+            @include respondScreen('large-mobile') {
+                font-size: 28px;
+            }
+        }
+        .recent-news-subTitle {
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+
+    .border-btn {
+        color: #FF007A;
+        border: 1px solid #FF007A;
+        width: 112px;
+        height: 56px;
+        font-size: 14px;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @include respondScreen('large-mobile') {
+            width: 80%;
+        }
+    }
+}
+
+.recent-news-card-container {
+    margin-top: 80px;
+    gap: 16px;
+    @include respondScreen('large-mobile') {
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .card {
+        width: 405.33px;
+        height: 564.64px;
+        border-radius: 8px;
+        @include respondScreen('large-mobile') {
+            width: 100%;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 14px #CDE3EF;
+            background-color: #fff;
+        }
+        img {
+            width: 100%;
+            height: 292.68px;
+        }
+
+        .card-body {
+            padding: 23px;
+
+            .card-top {
+                gap: 23.41px;
+
+                .tag {
+                    padding: 4px 8px;
+                    background-color: #F4F4F4;
+                    border-radius: 4px;
+                    margin-right: 15.61px;
+                    font-size: 16.65px;
+                    font-weight: 600;
+                }
+                .read-time {
+                    font-style: 13.66px;
+                    font-weight: 600;
+                }
+            }
+
+            .card-title-container {
+                gap: 7.8px;
+                margin-top: 15.61px;
+
+                .title {
+                    width: 314px;
+                    font-size: 23.41px;
+                    font-weight: 600;
+                }
+
+                .subTitle {
+                    font-size: 15.61px;
+                    font-weight: 400;
+                }
+            }
+
+            .link {
+                gap: 8px;
+                margin-top: 23.41px;
+                color: #FF007A;
+                font-size: 15px;
+                cursor: pointer;
+                width: fit-content;
+
+                .link-title {
+                    font-weight: 400;
+                }
+
+                .link-icon {
+                    width: 12px;
+                    height: 12px;
+                    filter: invert(19%) sepia(100%) saturate(5503%) hue-rotate(323deg) brightness(99%) contrast(111%);
+                }
+            }
+        }
+    }
+}

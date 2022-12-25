@@ -1,0 +1,121 @@
+.pricing-section {
+    height: 868px;
+    @include respondScreen('large-mobile') {
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .container {
+        gap: 80px;
+
+        @include respondScreen('large-mobile') {
+            gap: 25px;
+        }
+
+        .top {
+            width: 853px;
+            @include respondScreen('large-mobile') {
+                width: 90%;
+            }
+            .title {
+                font-family: Nunito;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 58px;
+                text-align: center;
+                margin-bottom: 16px;
+
+                @include respondScreen('large-mobile') {
+                    font-size: 28px;
+                }
+            }
+
+            .subTitle {
+                font-family: Nunito;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+
+.price-container {
+    gap: 31.22px;
+    @include respondScreen('large-mobile') {
+        flex-direction: column;
+        gap: 15px;
+        width: 80%;
+    }
+
+    .card {
+        width: 405.33px;
+        padding: 31px;
+        gap: 31.22px;
+
+        @include respondScreen('large-mobile') {
+            width: 100%;
+        }
+    
+        &:hover {
+            outline: 1px solid #3D3A41;
+            border-radius: 8px;
+        }
+    
+        .top-part {
+            gap: 7.8px;
+        }
+    
+        .border-btn {
+            color: rgba(255, 0, 122, 1);
+            border: 1px solid rgba(255, 0, 122, 1);
+            width: 100%;
+    
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+.middle {
+    gap: 16px;
+    font-style: 16px;
+    font-weight: 400;
+    list-style-type: none;
+    align-self: flex-start;
+
+    li {
+        gap: 16px;
+    }
+
+    .check-mark {
+        background: #3D3A41;
+    }
+}
+
+
+
+.plan {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.price-month {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.price-year {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3D3A41;
+}

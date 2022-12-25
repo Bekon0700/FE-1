@@ -1,0 +1,98 @@
+.protection-mode-showcase {
+    height: 560px;
+    @include respondScreen('large-mobile') {
+        height: auto;
+    }
+
+    .container {
+        gap: 43px;
+        margin: 100px auto;
+
+        @include respondScreen('large-mobile') {
+            gap: 25px;
+            flex-direction: column-reverse;
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .right {
+            // width: 50%;
+            width: 624px;
+            @include respondScreen('large-mobile') {
+                width: 95%;
+            }
+            .title {
+                //styleName: Heading 02- 48 Pixel;
+                font-family: Nunito;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 58px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                width: 554px;
+
+                @include respondScreen('large-mobile') {
+                    width: 100%;
+                    font-size: 28px;
+                    text-align: center;
+                }
+            }
+
+            .description {
+                //styleName: Body- 16 Pixel;
+                font-family: Nunito;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                text-align: left;
+
+                margin-top: 16px;
+                margin-bottom: 40px;
+            }
+
+            button {
+                color: #FF007A;
+                border: 1px solid#FF007A;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                @include respondScreen('large-mobile') {
+                    width: 90%;
+                }
+            }
+        }
+
+        .protection-mode-img {
+            width: 613px;
+            height: 399px;
+            position: relative;
+            @include respondScreen('large-mobile') {
+                width: 100%;
+            }
+
+            .img-top-left {
+                width: 515px;
+                height: 360px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include respondScreen('large-mobile') {
+                    width: 100%;
+                }
+            }
+            .img-bottom-right {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+            }
+            
+        }
+
+    }
+}

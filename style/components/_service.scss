@@ -1,0 +1,136 @@
+.service-section {
+  margin-top: 100px;
+  height: 1037px;
+  @include respondScreen("large-mobile") {
+    height: auto;
+  }
+}
+
+.service-top {
+  width: 575px;
+  margin-bottom: 80px;
+
+  @include respondScreen("large-mobile") {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .service-title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #211f25;
+
+    @include respondScreen("large-mobile") {
+      font-weight: 700;
+      font-size: 28px;
+    }
+  }
+
+  .service-subTitle {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+
+.service-bottom {
+  gap: 32px;
+
+  @include respondScreen("large-mobile") {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 405px;
+    padding: 24px;
+    gap: 33px;
+
+    @include respondScreen("large-mobile") {
+      width: 100%;
+      padding: 16px;
+      gap: 15px;
+    }
+
+    &:hover {
+      background: #f7f5ff;
+      border-radius: 8px;
+
+      .clear-btn {
+        color: #ff007a;
+      }
+    }
+
+    .card-img {
+      width: 357px;
+      height: 300px;
+      position: relative;
+
+      .card-img-top-right {
+        width: 318px;
+        height: 217px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .card-img-top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .card-img-bottom-right {
+        position: absolute;
+        bottom: 13px;
+        right: 0;
+        box-shadow: 0px 0px 42.1772px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+      }
+
+      .card-img-bottom-left {
+        position: absolute;
+        // width: 124px;
+        // height: 154px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: #ffffff;
+        box-shadow: 0px 0px 42.1772px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+      }
+    }
+
+    .card-bottom {
+      gap: 40px;
+
+      .info {
+        .card-title {
+          //styleName: Heading 03- 32 Pixel;
+          font-family: Nunito;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: -0.01em;
+          text-align: center;
+        }
+
+        .card-description {
+          //styleName: Body- 16 Pixel;
+          font-family: Nunito;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0.02em;
+          text-align: center;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

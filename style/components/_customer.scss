@@ -1,0 +1,44 @@
+.customer-section {
+    height: 989px;
+    @include respondScreen('large-mobile') {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    position: relative;
+
+    .divider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .container {
+        gap: 80px;
+        @include respondScreen('large-mobile') {
+            margin: 80px auto;
+            gap: 25px;
+        }
+        .customer-top {
+            width: 603px;
+            gap: 16px;
+            text-align: center;
+            @include respondScreen('large-mobile') {
+                width: 100%;
+            }
+
+            .title {
+                font-size: 48px;
+                font-weight: 700;
+                @include respondScreen('large-mobile') {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .customer-logos {
+            width: 100%;
+        }
+    }
+}

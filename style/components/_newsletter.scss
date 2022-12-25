@@ -1,0 +1,70 @@
+.newsletter-section {
+    background: #6B50FF;
+    padding: 112px 64px;
+    @include respondScreen('large-mobile') {
+        padding: 70px 30px;
+    }
+
+    .container {
+        gap: 24px;
+        .news-top {
+            text-align: center;
+            gap: 24px;
+
+            .news-title {
+                font-size: 48px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            .news-subTitle {
+                font-size: 18px;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+
+        .news-bottom {
+            gap: 16px;
+            // width: 513px;
+
+            .news-condition {
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                margin-top: 20px;
+            }
+
+            .news-form {
+
+                @include respondScreen('large-mobile') {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                .form-input {
+                    padding: 16px 28px;
+                    border-radius: 25px;
+                    font: 12px;
+                    border: none;
+                    width: 365px;
+                    @include respondScreen('large-mobile') {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                .fill-btn {
+                    width: 132px;
+                    height: 56px;
+                    margin-left: 16px;
+
+                    @include respondScreen('large-mobile') {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

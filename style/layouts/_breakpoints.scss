@@ -1,0 +1,20 @@
+$breakPoints: (
+    'small-mobile': (max-width: 320px),
+    'medium-mobile': (max-width: 360px),
+    'large-mobile': (max-width: 480px),
+    'tablet': (max-width: 600px),
+    'small-laptop': (max-width: 992px),
+    'medium-laptop': (max-width: 1200px),
+    'large-laptop': (max-width: 1400px)
+);
+
+@mixin respondScreen($screen){
+    @if map-has-key($breakPoints, $screen){
+        @media #{(inspect(map-get($breakPoints, $screen)))}{
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldnt match any screen `#{$screen}`."
+    }
+};

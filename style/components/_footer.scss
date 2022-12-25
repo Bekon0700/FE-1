@@ -1,0 +1,120 @@
+.footer-section {
+    height: 470px;
+    background: #211F25;
+    position: relative;
+    @include respondScreen('large-mobile') {
+        height: auto;
+    }
+
+    .footer-divider {
+        width: 100%;
+        position: absolute;
+        bottom: 99%;
+        left: 0;
+    }
+
+    .container {
+        gap: 80px;
+
+        .footer-top {
+            width: 100%;
+            margin-top: 100px;
+            @include respondScreen('large-mobile') {
+                flex-direction: column;
+                gap: 75px;
+            }
+
+            .footer-top-left {
+                width: 348px;
+                gap: 32px;
+                @include respondScreen('large-mobile') {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .footer-logo {
+                    width: 144px;
+                    height: 28.8px;
+                }
+
+                .footer-nav {
+                    list-style-type: none;
+                    color: #fff;
+                    gap: 32px;
+                }
+            }
+
+            .footer-top-right {
+                gap: 16px;
+                @include respondScreen('large-mobile') {
+                    width: 80%;
+                    margin: 0 auto;
+                    gap: 25px;
+                }
+                .title {
+                    font-weight: 700px;
+                    color: #fff;
+                }
+
+                .footer-subscribe {
+                    @include respondScreen('large-mobile') {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        gap: 15px;
+                    }
+                    .footer-input {
+                        width: 256px;
+                        height: 48px;
+                        padding: 16px 24px;
+                        border-radius: 32px;
+                        outline: none;
+                        border: none;
+                        margin-right: 16px;
+                        @include respondScreen('large-mobile') {
+                            width: 100%;
+                        }
+                    }
+                    .fill-btn {
+                        width: 128px;
+                        height: 56px;
+                        @include respondScreen('large-mobile') {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .footer-subscribe-policy {
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .footer-bottom {
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            padding-top: 32px;
+            border-top: 1px solid #ffffff;
+            @include respondScreen('large-mobile') {
+                flex-direction: column;
+                gap: 25px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .terms {
+                list-style-type: none;
+                gap: 24px;
+                @include respondScreen('large-mobile') {
+                    margin: 0 auto;
+                }
+
+                li {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

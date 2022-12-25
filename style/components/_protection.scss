@@ -1,0 +1,108 @@
+.protection-showcase {
+    height: 570px;
+    background-color: #FCFBFF;
+
+    @include respondScreen('large-mobile') {
+        height: auto;
+    }
+
+    .container {
+        gap: 36px;
+        margin: 100px auto;
+
+        @include respondScreen('large-mobile') {
+            gap: 25px;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .left {
+            // width: 50%;
+            width: 624px;
+            @include respondScreen('large-mobile') {
+                width: 100%;
+            }
+
+            .title {
+                //styleName: Heading 02- 48 Pixel;
+                font-family: Nunito;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 58px;
+                letter-spacing: -0.01em;
+                text-align: left;
+
+
+                @include respondScreen('large-mobile') {
+                    font-size: 28px;
+                    text-align: center;
+                }
+            }
+
+            .description {
+                //styleName: Body- 16 Pixel;
+                font-family: Nunito;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                text-align: left;
+
+                margin-top: 16px;
+                margin-bottom: 30px;
+                @include respondScreen('large-mobile') {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+
+            button {
+                color: #FF007A;
+                border: 1px solid#FF007A;
+                padding: 17.5px 53px;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                @include respondScreen('large-mobile') {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .protection-img {
+            width: 620px;
+            position: relative;
+            height: 370px;
+
+            @include respondScreen('large-mobile') {
+                width: 100%;
+            }
+
+            .img-top-right {
+                width: 509px;
+                height: 352px;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include respondScreen('large-mobile') {
+                    width: 100%;
+                }
+            }
+
+            .img-bottom-left {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+            }
+        }
+
+    }
+}
